@@ -1,6 +1,6 @@
 # RUSH (Rapid Unix SHell)
 
-A minimal Unix-like shell written in C.
+Rush is a Rapid Unix-like Shell written in C. 
 
 ## Features
 - Run external programs
@@ -15,8 +15,10 @@ make
 ``` 
 
 ## Examples
+```
 rush> ls
 rush> cd /tmp
 rush> path /bin /usr/bin
 rush> ls > out.txt
 rush> ls & pwd & whoami
+```
