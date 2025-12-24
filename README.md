@@ -1,22 +1,22 @@
-RUSH — Rapid Unix Shell (C)
+# RUSH (Rapid Unix SHell)
 
-A lightweight Unix shell written in C that supports running external commands via fork/exec, changing directories, configuring executable search paths, basic output redirection, and parallel command execution.
+A minimal Unix-like shell written in C.
 
-Build:
+## Features
+- Run external programs
+- Built-in commands: `exit`, `cd`, `path`
+- Output redirection with `>`
+- Parallel execution with `&`
+
+## Build and Run
+```bash
 make
-
-Run:
 ./rush
+``` 
 
-Built-ins:
-- exit
-- cd <dir>
-- path <dir1> <dir2> ...
-
-Notes:
-- Default path is /bin
-- Supports output redirection using ">"
-- Supports parallel commands separated by "&"
-
-Clean:
-make clean
+## Examples
+rush> ls
+rush> cd /tmp
+rush> path /bin /usr/bin
+rush> ls > out.txt
+rush> ls & pwd & whoami
